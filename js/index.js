@@ -4,7 +4,9 @@ $(document).ready(function(){
 	var windowWidth = $(window).width();
 	var mouseX = 0;
 
-
+	setInterval(function(e){
+		makeErrors();
+	}, 1000);
 
 	$(document).mouseover(function(e){
 		mouseX = e.pageX;
@@ -13,11 +15,6 @@ $(document).ready(function(){
 			setTimeout(function(){
 				displayBlock();
 			}, 2000); 
-
-			setTimeout(function(e){
-				makeErrors();
-				console.log("running")
-			}, 1000);
 
 		}
 
