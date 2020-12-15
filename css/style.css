@@ -1,0 +1,73 @@
+body {font-family: 'IM Fell Double Pica', serif; color:white;
+background-size: cover; width: 1920px; height: 1080px; background-image: url('../img/22.png');
+overflow: hidden;}
+h1 {font-size: 10em;}
+h2 {font-size: 3em;}
+
+
+header {padding: 100px;}
+.name {font-size: 2em; padding: 70px 100px;}
+.story {padding: 0px 100px; font-size: 1.2em}
+.marker {width: 521.5px; height: auto; bottom: 2px;}
+
+img {position: absolute; max-width: 100% !important; height: auto !important}
+
+.hf {width: 40%; bottom: 0; right: 13%; animation: 4s hands infinite cubic-bezier(.31,.12,.48,.91);}
+.hb {width: 40%; bottom: 0; right: 13%; animation: 4s hands infinite cubic-bezier(.31,.12,.48,.91);}
+.b1 {right:37%; width: 8%; bottom: 25%; animation: 4s hand1 infinite cubic-bezier(.31,.12,.48,.91)}
+.b2 {right: 30%; width: 6%; bottom: 20%; animation: 4s hand2 infinite cubic-bezier(.31,.12,.48,.91)}
+.b3 {right: 22%; width: 7%; bottom: 20%; animation: 4s hand3 infinite cubic-bezier(.31,.12,.48,.91)}
+
+.d1 {width: 15%; top: 0; right: 35%; animation: 5.5s doll1 infinite cubic-bezier(.08,.18,.33,.88);}
+.d2 {width: 8%; top: 0; right: 31%;}
+.d3 {width: 8%; top: 0; right: 25%;}
+.d4 {width: 20%; top: 0; right: 13%; animation: 5.5s doll2 infinite cubic-bezier(.08,.18,.33,.88);}
+.d5 {width: 9%; top: 0; right: 18%}
+.doll {position: absolute; top:0; width: 100%;
+	animation: 5.5s dolls infinite cubic-bezier(.08,.18,.33,.88);}
+
+@keyframes dolls {
+	0% {right: 0%}
+	30% { right: 3% }
+	55% { right: 0% } }
+
+@keyframes doll1 {
+	20% { right: 36% }
+	65% { right: 32% }
+	90% { right: 35% } 
+}
+
+@keyframes doll2 {
+	30% { right: 11% }
+	60% { right: 15% }
+	100% { right: 13% }
+}
+
+@keyframes hands { 
+	30% { bottom: -2% }
+	80% { bottom: 0% }
+}
+
+@keyframes hand1 { 
+	50% { bottom: 22% }
+	80% { bottom: 25% }
+}
+
+@keyframes hand2 { 
+	40% { bottom: 18% }
+	80% { bottom: 20% }
+}
+
+@keyframes hand3 { 
+	50% { bottom: 16% }
+	80% { bottom: 20% }
+}
+
+
+.error {width: 100%; height: 100%; opacity: 90%; position: absolute; top: 0; display:none; background-color: black; z-index: 100; background-size: cover; background-image: url('../img/errorback.png')}
+.error2 {width: 1020px; height: 800px; position: absolute; top: 0; z-index: 102; display:none;}
+.square {width: 15px; height: 15px; position: absolute; z-index: 150; background-color: rgb(255, 0, 255);}
+.words {position: absolute; font-size: 3rem;z-index: 150; font-family: 'Nanum Gothic Coding', monospace; width: 330px; height: 100px;}
+.blur {filter: blur(15px); transition: all 1s ease-out; opacity: 50%;}
+.line {transition: width 1s ease-out; width: 0%; opacity: 0%}
+.grow {width: 400px; opacity:100%;}
